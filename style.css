@@ -1,0 +1,359 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif, 'Raleway';
+}
+/*general*/
+.container
+{
+    width:80%;
+    margin:0 auto;
+    overflow:hidden;
+}
+.bold
+{
+    font-weight: bold;
+}
+ul
+{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+button
+{
+    margin:20px;
+    border:none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding :15px 40px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color:#3d9f96;
+}
+/*en-tête*/
+#header
+{
+    color: white;
+    background-color: #27242b;
+   
+}
+.header-nav
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav a
+{
+    color:white;
+    text-decoration: none;
+    size: 20px;
+}
+
+header li 
+{
+    float:left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .get a
+{
+    color: #3d9f96;
+    text-decoration: none;
+}
+
+/*corps*/
+.promote .title
+{
+    font-size: 40px;
+    color:grey;
+    padding: 20px 0 20px 0;
+}
+
+.promote .bold
+{
+    color:white;
+}
+
+.promote p:last-child
+{
+    width:60%;
+}
+
+.promote
+{
+    text-align:center;
+}
+
+.promote .subtitle
+{
+    color: #3d9f96;
+}
+
+/*media social*/
+#media
+{
+    padding: 40px 0 40px 0;
+    background-color: #f7f7f7;
+}
+#media .media-social
+{
+    display:flex;
+    justify-content: space-evenly;
+   
+}
+#media .subtitle
+{
+    color: #3d9f96;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*check our nexw App*/
+
+#check .titre
+{
+  
+    margin: 0 auto;
+    font-size: 33px;
+    text-align: center;
+    padding: 20px 0 70px 0;
+}
+#check .sous-titre
+{
+    width : 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#check .awesome
+{
+    display: flex;
+    background-size: cover;
+    justify-content: space-evenly;
+    background-image: url("assets/img/map_bg.png");
+}
+
+.avatar
+{
+    color: white;
+    padding: 50px 0;
+    margin-top: 60px;
+    text-align: center;
+    background-color: #27242b;
+}
+
+.avatar p:last-child
+{
+    color: #3d9f96;
+}
+
+/*the best screenshot*/
+.screenshot
+{
+    background-color: #f7f7f7;
+}
+
+
+.screenshot .screen
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*testd responsive*/
+
+.tested
+{
+    max-width: 80%;
+    margin: 5% auto;
+}
+
+.tested .container .litmus
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tested .container .litmus .col1
+{
+    width: 50%;
+}
+
+.tested .container .litmus .col2
+{
+    width: 50%;
+}
+
+.tested .container .litmus p:first-child
+{
+    font-size: 30px;
+}
+.tested .container .responsive
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tested .container .responsive .col1
+{
+    width: 50%;
+}
+
+
+.tested .container .responsive .col2
+{
+    width: 50%;
+    padding: 0 15px;
+}
+
+
+.tested .container .responsive p:first-child
+{
+    font-size: 30px;
+}
+
+/*footer*/
+footer .foot
+{
+    background-color: #f7f7f7;
+    padding: 45px 0 50px 0;
+}
+
+
+footer .foot .container
+{
+    display:flex;
+    justify-content: center;
+  
+}
+
+footer .foot .container .col1
+{
+    width :33%;
+}
+
+footer .foot .container .col2
+{
+    width :33%;
+    text-align: center;
+}
+
+footer .foot .container .col3
+{
+    width :33%;
+}
+
+footer #footer .container
+{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+/*responsive avec les media querries*/
+
+@media (max-width:760px)
+{
+    header nav,header div a,#media .subtitle p
+    {
+        display:none;
+    }
+
+    #header img
+    {
+        text-align: center;
+        font-size: 250px;
+    }
+
+    #header .title,#check .titre
+    {
+        font-size:25px;
+    }
+
+    #header .subtitle,#check .sous-titre
+    {
+        font-size: 15px;
+    }
+
+    #header .promote img
+    {
+        width:270px;
+    }
+
+    /*check our newapp*/
+    #check .awesome
+    {
+        display:block;
+        text-align: center;
+    }
+
+    /* screenshot*/
+    .screenshot .screen
+    {
+        display: block;
+        text-align: center;
+    }
+
+    /* test responsive*/
+    .tested .container .litmus
+    {
+        display: block;
+        text-align: center;
+    }
+    .tested .container .litmus .col1,.tested .container .litmus .col2
+    {
+        width: 100%;
+    }
+    .tested .container .litmus .col1 img 
+    {
+        width: 250px;
+    }
+
+    .tested .container .responsive
+    {
+        display: block;
+        text-align: center;
+    }
+
+
+    .tested .container .responsive .col1,.tested .container .responsive .col2
+    {
+        width: 100%;
+    }
+    .tested .container .responsive .col2 img 
+    {
+        width :250px;
+    }
+
+    /*footer*/
+
+    footer .foot .container
+    {
+        display: block;
+        text-align: center;
+    }
+  
+    footer .foot .container .col1
+    {
+        width :100%;
+        text-align: center;
+    }
+
+    footer .foot .container .col2
+    {
+        width :100%;
+        text-align: center;
+    }
+
+    footer .foot .container .col3
+    {
+        width :100%;
+    }
+}
